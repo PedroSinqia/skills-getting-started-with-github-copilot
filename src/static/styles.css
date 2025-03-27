@@ -145,25 +145,31 @@ footer {
 
 .activity-card ul {
   margin-top: 10px;
+  padding-left: 25px;
+  list-style-type: none; /* Remove os marcadores padrão */
+}
+
+.activity-card ul li {
+  margin-bottom: 8px;
   padding-left: 20px;
-  list-style-type: disc;
-  color: #333;
-}
-
-.activity-card ul li {
-  margin-bottom: 5px;
-}
-
-.activity-card ul li {
-  margin-bottom: 5px;
-  padding-left: 10px;
   position: relative;
+  font-size: 14px;
+  color: #555; /* Cor neutra para o texto */
 }
 
 .activity-card ul li::before {
   content: "✔"; /* Ícone de check */
   position: absolute;
   left: 0;
-  color: #2e7d32; /* Verde */
-  font-size: 14px;
+  color: #4caf50; /* Verde mais vibrante */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Adiciona um título visual para a lista de participantes */
+.activity-card div strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #1a237e; /* Azul escuro */
 }
