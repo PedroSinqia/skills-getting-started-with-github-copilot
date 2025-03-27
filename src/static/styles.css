@@ -153,3 +153,17 @@ footer {
 .activity-card ul li {
   margin-bottom: 5px;
 }
+
+.activity-card ul li {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.activity-card ul li::before {
+  content: "✔"; /* Ícone de check */
+  position: absolute;
+  left: 0;
+  color: #2e7d32; /* Verde */
+  font-size: 14px;
+}
